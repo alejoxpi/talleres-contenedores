@@ -65,6 +65,8 @@ Vagrant.configure("2") do |config|
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
    config.vm.provision "shell", inline: <<-SHELL
+     mkdir ~/talleres
+     mkdir ~/talleres/taller1
      apt-get update
      apt-get upgrade -y
      apt-get install -y ca-certificates curl gnupg lsb-release

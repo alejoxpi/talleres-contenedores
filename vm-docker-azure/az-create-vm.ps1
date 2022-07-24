@@ -34,5 +34,7 @@ az vm create -n $vmName -g $rgName `
 --admin-username "ubuntu"
 
 az vm open-port --resource-group $rgName --name $vmName --port 80 --priority 100
-az vm open-port --resource-group $rgName --name $vmName --port 8080 --priority 101
-az vm open-port --resource-group $rgName --name $vmName --port 8081 --priority 102
+az vm open-port --resource-group $rgName --name $vmName --port 8080 --priority 180
+az vm open-port --resource-group $rgName --name $vmName --port 8081 --priority 181
+az vm open-port --resource-group $rgName --name $vmName --port 8082 --priority 182
+az vm open-port --resource-group $rgName --name $vmName --port 8083 --priority 183

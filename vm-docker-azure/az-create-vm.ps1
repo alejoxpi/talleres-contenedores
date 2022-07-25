@@ -38,3 +38,5 @@ az vm open-port --resource-group $rgName --name $vmName --port 8080 --priority 1
 az vm open-port --resource-group $rgName --name $vmName --port 8081 --priority 181
 az vm open-port --resource-group $rgName --name $vmName --port 8082 --priority 182
 az vm open-port --resource-group $rgName --name $vmName --port 8083 --priority 183
+
+az vm show -d -g $rgName -n $vmName --query publicIps -o tsv

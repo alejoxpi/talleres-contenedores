@@ -1,5 +1,5 @@
 # Actualizar el Id de la suscripcion que se usara para el ejercicioo
-$suscriptionId = "xxxx-xxxxx-xxxx-xxxxx"
+$suscriptionId = "dac6ba8b-38c4-402a-a481"
 
 # Se sugiere usar el numero de cedula para generar nombres de recursos que no se repitan en otras suscripciones
 $cedula = "123456789"

@@ -1,5 +1,5 @@
 # Actualizar el Id de la suscripcion que se usara para el ejercicioo
-$suscriptionId = "xxxx-xxxxx-xxxx-xxxxx"
+$suscriptionId = "dac6ba8b-38c4-402a-a481"
 
 # Se sugiere usar el numero de cedula para generar nombres de recursos que no se repitan en otras suscripciones
 $cedula = "123456789"
@@ -38,5 +38,8 @@ az vm open-port --resource-group $rgName --name $vmName --port 8080 --priority 1
 az vm open-port --resource-group $rgName --name $vmName --port 8081 --priority 181
 az vm open-port --resource-group $rgName --name $vmName --port 8082 --priority 182
 az vm open-port --resource-group $rgName --name $vmName --port 8083 --priority 183
+az vm open-port --resource-group $rgName --name $vmName --port 5000 --priority 184
+az vm open-port --resource-group $rgName --name $vmName --port 27017 --priority 185
+az vm open-port --resource-group $rgName --name $vmName --port 3000 --priority 186
 
 az vm show -d -g $rgName -n $vmName --query publicIps -o tsv
